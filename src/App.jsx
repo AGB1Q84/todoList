@@ -1,19 +1,9 @@
 import React from "react";
-// import UserList from "./components/UserList/UserList";
-import TodoList from "./components/TodoList/TodoList";
-// import TodoForm from "./components/TodoForm /TodoForm";
-// import TodoItem from "./components/TodoItem/TodoItem";
+import { router } from "./page/routers"
+import { RouterProvider } from 'react-router-dom'
 
-
-
-const List = () => {
-    return (
-        <>
-        
-        <TodoList/>
-        {/* <UserList/> */}
-        </>
-    )
+const App = () => {
+    return <RouterProvider router={router} />
 }
 
-export default List;
+export default App;
